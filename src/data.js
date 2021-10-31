@@ -13,25 +13,22 @@ import dribbbleIcon from "./images/dribbble.svg"
 import instagramIcon from "./images/instagram.svg"
 
 export default {
-  //(Please Do Not Remove The comma(,) after every variable)
-  //Change The Website Template
-
   //   Header Details ---------------------
-  name: "chetan",
+  name: "Syed Saifullah",
   headerTagline: [
     //Line 1 For Header
-    "Building digital",
+    "Aspiring Software Engineer",
     //Line 2 For Header
-    "products, brands,",
+    "Passionate Problem Solver",
     //Line 3 For Header
-    "and experience",
+    "Novice Public Speaker",
   ],
   //   Header Paragraph
   headerParagraph:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
 
   //Contact Email
-  contactEmail: "hello@chetanverma.com",
+  contactEmail: "sydsaifullah7@gmail.com",
 
   // End Header Details -----------------------
 

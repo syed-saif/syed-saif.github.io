@@ -1,6 +1,6 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-import data from "../yourdata"
+import data from "../data"
 
 const Header = () => {
   return (
@@ -8,32 +8,29 @@ const Header = () => {
       <div className="container">
         <div className="header-wrapper">
           <Fade bottom>
+            <h4 style={{'font-size': '1.5em'}}>
+              Greetings, the great voyager of the internet! I am
+            </h4>
             <h2>
-              Hi, I'm {data.name}{" "}
-              <span role="img" aria-label="Emoji">
-                👋
-              </span>
+              {data.name}.
             </h2>
           </Fade>
           <Fade bottom cascade>
             <div className="heading-wrapper">
-              <h1>
-                {data.headerTagline[0]
-                  ? data.headerTagline[0]
-                  : "Building digital"}
-              </h1>
-              <h1>
-                {" "}
-                {data.headerTagline[1]
-                  ? data.headerTagline[1]
-                  : "products, brands"}
-              </h1>
-              <h1>
-                {" "}
-                {data.headerTagline[2]
-                  ? data.headerTagline[2]
-                  : "and experience"}
-              </h1>
+              <h4 style={{'font-size': '1.5em'}}>
+                I enjoy developing and scaling REST Backends, Full-stack systems and Data Pipelines.
+                <br />
+                If I could describe myself with only 3 terms, I would say I'm a:
+              </h4>
+              <h3>
+                {data.headerTagline[0]}
+              </h3>
+              <h3>
+                {data.headerTagline[1]}
+              </h3>
+              <h3>
+                {data.headerTagline[2]}
+              </h3>
             </div>
           </Fade>
           <Fade bottom>
@@ -41,9 +38,7 @@ const Header = () => {
           </Fade>
           <Fade bottom>
             <a
-              href={`mailto:${
-                data.contactEmail ? data.contactEmail : "hello@chetanverma.com"
-              }`}
+              href={`mailto:${data.contactEmail}`}
               className="primary-btn"
             >
               CONNECT WITH ME
